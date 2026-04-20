@@ -1,0 +1,393 @@
+---
+slug: /
+sidebar_position: 1
+---
+
+import BlockImage from '@site/src/components/BlockImage';
+import GitHubIssues from '@site/src/components/GitHubIssues';
+
+# Overview
+
+## Discover OpenArm
+
+**OpenArm** is an open-source 7DOF humanoid arm designed for physical AI research and deployment in contact-rich environments. All hardware and software are completely open-source and ready for you to build, hack, and deploy!
+
+We're in continuous development and actively seeking contributors, research partners, and company collaborators to shape the next generation of practical humanoid systems.
+
+<div style={{ position: "relative", paddingBottom: "56.25%", height: 0, margin: "2rem 0", overflow: "hidden" }}>
+  <iframe
+    src="https://www.youtube.com/embed/6ZLM6f8kF4Q"
+    title="YouTube video player"
+    style={{
+      position: "absolute",
+      top: 0,
+      left: 0,
+      width: "100%",
+      height: "100%",
+      border: 0
+    }}
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+    allowFullScreen
+  />
+</div>
+
+<div style={{
+  display: 'flex',
+  flexDirection: 'column',
+  alignItems: 'center',
+  marginTop: '3rem',
+  marginBottom: '3rem'
+}}>
+  <div style={{
+    border: '2px solid #ebebeb',
+    borderRadius: '1rem',
+    padding: '2.5rem 2rem',
+    background: '#fff',
+    boxShadow: '0 4px 10px rgba(0,0,0,0.08)',
+    maxWidth: '100%',
+    width: '100%',
+    textAlign: 'center'
+  }}>
+    <h3 style={{
+      margin: 0,
+      fontSize: '1.75rem',
+      color: '#111827',
+      fontWeight: '700'
+    }}>
+      📦 Purchase Your OpenArm!
+    </h3>
+    <p style={{
+      marginTop: '1rem',
+      marginBottom: '1.5rem',
+      fontSize: '1rem',
+      color: '#374151',
+      lineHeight: '1.6'
+    }}>
+      Get your OpenArm, assembled or DIY, and join the global community!<br/>
+      Browse verified and certified manufacturers worldwide.
+    </p>
+    <a href="../purchase" style={{
+      display: 'inline-block',
+      padding: '10px 20px',
+      backgroundColor: '#5FBBC7',
+      color: 'white',
+      textDecoration: 'none',
+      borderRadius: '5px',
+      fontWeight: '600'
+    }}
+    onMouseOver={(e) => {
+      e.currentTarget.style.background = '#3b8089';
+      e.currentTarget.style.transform = 'translateY(-2px)';
+    }}
+    onMouseOut={(e) => {
+      e.currentTarget.style.background = '#5Fbbc7';
+      e.currentTarget.style.transform = 'none';
+    }}
+    >Buy Now →</a>
+  </div>
+</div>
+
+### What's Unique?
+
+- **Human-Scale Design**
+  OpenArm is designed with human-like proportions and dimensions, scaled for a person around 160-165cm tall. This provides an optimal balance between practical reach and manageable inertia for safe, responsive operation.
+
+- **Safety-First Architecture**
+  Built with QDD backdrivable motors and high compliance, OpenArm prioritizes safe human-robot interaction while maintaining practical payload capabilities (6.0kg peak / 4.1kg nominal) for real-world tasks.
+
+- **Built for Durability**
+  Critical structural components use aluminum and stainless steel construction, ensuring robust performance for repetitive data collection and continuous research use.
+
+- **Fully Accessible & Buildable**
+  Every component — from CNC parts and 3D-printed casings to electrical wiring — is designed to be purchasable and buildable by individual researchers and labs, with complete fabrication data provided.
+
+- **Practical & Affordable**
+  At 6,500 USD for a complete bimanual system, OpenArm delivers research-grade capabilities at a fraction of traditional humanoid robot costs, making advanced robotics accessible to more teams and applications.
+
+
+<BlockImage src="getting-started/index/unique.png" alt="leader-follower" width="100%" />
+
+## Project Overview & Structure
+
+```mdx-code-block
+import ThemedImage from '@theme/ThemedImage';
+```
+
+OpenArm is organized across multiple platforms to support different aspects of development, collaboration, and community engagement.
+<div style={{display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '20px', marginBottom: '30px'}}>
+  <div style={{padding: '20px', border: '2px solid #e1e8ed', borderRadius: '8px', textAlign: 'center'}}>
+    <h3>🌐 Main Website</h3>
+    <p>Project homepage with announcements, visualizations, and contact forms</p>
+    <a href="https://openarm.dev" style={{
+      display: 'inline-block',
+      padding: '10px 20px',
+      backgroundColor: '#007acc',
+      color: 'white',
+      textDecoration: 'none',
+      borderRadius: '5px',
+      fontWeight: 'bold'
+    }}>Visit Website</a>
+  </div>
+  <div style={{padding: '20px', border: '2px solid #e1e8ed', borderRadius: '8px', textAlign: 'center'}}>
+    <h3>📚 Documentation</h3>
+    <p>Complete technical guides and tutorials for you to build, hack and deploy OpenArm!</p>
+    <a href="https://docs.openarm.dev" style={{
+      display: 'inline-block',
+      padding: '10px 20px',
+      backgroundColor: '#28a745',
+      color: 'white',
+      textDecoration: 'none',
+      borderRadius: '5px',
+      fontWeight: 'bold'
+    }}>Browse Docs</a>
+  </div>
+</div>
+<div style={{display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '20px', marginBottom: '30px'}}>
+  <div style={{padding: '20px', border: '2px solid #e1e8ed', borderRadius: '8px', textAlign: 'center'}}>
+    <h3>💻 GitHub</h3>
+    <p>Open-source repositories with code, CAD files, issue tracking, and feature requests</p>
+    <a href="https://github.com/enactic/openarm" style={{
+      display: 'inline-block',
+      padding: '10px 20px',
+      backgroundColor: '#3e4041ff',
+      color: 'white',
+      textDecoration: 'none',
+      borderRadius: '5px',
+      fontWeight: 'bold'
+    }}>Start Building</a>
+  </div>
+  <div style={{padding: '20px', border: '2px solid #e1e8ed', borderRadius: '8px', textAlign: 'center'}}>
+    <h3>💬 Discord</h3>
+    <p>Join for real-time discussions, support, and collaboration</p>
+    <a href="https://discord.gg/GmYa262ETH" style={{
+      display: 'inline-block',
+      padding: '10px 20px',
+      backgroundColor: '#5865f2',
+      color: 'white',
+      textDecoration: 'none',
+      borderRadius: '5px',
+      fontWeight: 'bold'
+    }}>Join Community</a>
+  </div>
+</div>
+
+| Repository | Documentation | Description and Contents |
+|--------------|-----------------|-------------------------------|
+| **[openarm](https://github.com/enactic/openarm)** |   | Main project repository with ideas, issues, and feature requests |
+| **[openarm_hardware](https://github.com/enactic/openarm_hardware)** | [Hardware Docs](https://docs.openarm.dev/hardware) | Complete CAD data: STL files, STEP files, Fusion 360 assemblies |
+| **[openarm_description](https://github.com/enactic/openarm_description)** | [Description Docs](https://docs.openarm.dev/software/description) | Robot description files with URDF/xacro for simulation |
+| **[openarm_can](https://github.com/enactic/openarm_can)** | [CAN Docs](https://docs.openarm.dev/software/can/) | CAN control library for low-level motor communication |
+| **[openarm_ros2](https://github.com/enactic/openarm_ros2)** | [ROS2 Docs](https://docs.openarm.dev/software/ros2/install) | ROS2 integration packages and nodes |
+| **[openarm_teleop](https://github.com/enactic/openarm_teleop)** | [Teleop Docs](https://docs.openarm.dev/teleop/) | Teleoperation packages with unilateral and bilateral control |
+| **[openarm_isaac_lab](https://github.com/enactic/openarm_isaac_lab)** | [Isaac Docs](https://docs.openarm.dev/simulation/) | Isaac Lab simulation environment and training tasks |
+
+Since its release, we've been steadily receiving stars, and the community is growing reliably.
+
+<a href="https://www.star-history.com/#enactic/openarm&type=date&legend=top-left">
+  <ThemedImage
+    alt="Star History Chart"
+    sources={{
+      dark: 'https://api.star-history.com/svg?repos=enactic%2Fopenarm&type=date&theme=dark&legend=top-left',
+      light: 'https://api.star-history.com/svg?repos=enactic%2Fopenarm&type=date&legend=top-left',
+    }}
+  />
+</a>
+
+### Get Help
+
+Our community and team are ready to help:
+
+- **Discord**
+    Connect with other builders, researchers, and the OpenArm team for real-time support and discussions:
+    [Join Now](https://discord.gg/GmYa262ETH)
+
+- **GitHub Issues**
+    Report bugs or request features directly in our repository:
+    [Open an Issue](https://github.com/enactic/openarm/issues)
+
+- **GitHub Discussions**
+    Ask technical questions directly in our repository:
+    [Start a Discussion](https://github.com/enactic/openarm/discussions)
+
+## Safety Guide
+
+:::warning
+Please read this guide carefully before operating OpenArm and use it safely at your own risk.
+:::
+
+We aim to realize a society where robots can be closer to people’s lives and provide meaningful support in daily activities.
+To achieve this, it is essential to ensure the safety and peace of mind of everyone involved in the development of robots, the environments where robots operate, and the people who interact with them.
+This guideline outlines key points you should be aware of to use OpenArm safely and responsibly.
+Please understand that the information presented here is only an example; true safety can only be ensured through sincere risk assessment and continuous improvement of safety measures.
+We hope you will become a member of the OpenArm community and join us in upholding and expanding this culture of safety.
+
+
+### Safe Use Requirements
+
+#### 1. Install in a safe location
+
+<BlockImage src="getting-started/safety-guidelines/location.png" alt="Safe location" width="70%" />
+
+When installing OpenArm, securely fasten it with screws or clamps to a flat and stable surface.
+Avoid placing it near fragile objects, flammable materials, or sources of moisture.
+Additionally, make sure there are no walkways or passages nearby where people frequently pass.
+
+#### 2. Maintain a safe distance
+
+<BlockImage src="getting-started/safety-guidelines/distance.png" alt="Safe distance" width="70%" />
+
+When operating OpenArm, always ensure that no part of your body or any objects enter its range of motion.
+When approaching the robot for adjustments, always check that the power is turned OFF, and make sure that people nearby do not accidentally turn it ON.
+If necessary, use barriers or markings to restrict access to the operating area.
+
+:::warning
+The range of motion changes when handling large objects or attaching original end effectors.
+:::
+
+:::warning
+When it is unavoidable to approach the OpenArm during teleoperation, keep a safe distance from dangerous areas such as elbows, shoulders, and protruding parts of the end effector, where fingers can easily get caught.
+:::
+
+#### 3. Wear appropriate Protective Equipment (PPE)
+
+<BlockImage src="getting-started/safety-guidelines/ppe.png" alt="PPE" width="70%" />
+
+Always wear safety goggles when operating OpenArm.
+In addition, wear other protective equipment (PPE) such as safety shoes, helmets, or gloves as needed.
+
+:::warning
+When you need to approach a robot for teleoperation or other purposes, wear clothing that fits your body well to avoid getting caught up in it.
+:::
+
+#### 4. Operate within specified limitations
+
+<BlockImage src="getting-started/safety-guidelines/limitation.png" alt="Limitation" width="70%" />
+
+Do not operate OpenArm beyond the specified payload limits for a single arm or both arms.
+When using an end-effector, also ensure that its payload capacity is not exceeded.
+
+#### 5. Prepare for an emergency stop
+
+<BlockImage src="getting-started/safety-guidelines/emergency-stop.png" alt="Emergency stop" width="70%" />
+
+Familiarize yourself with the location and operation of the emergency stop device so that you can activate it immediately if something abnormal occurs.
+The emergency stop switch should be installed in a safe position at a sufficient distance from OpenArm.
+
+:::warning
+OpenArm has high backdrivability suitable for bilateral control.
+Be aware that if power is lost due to an emergency stop, the load being held will fall rapidly.
+:::
+
+#### 6. Assess risks and continuously improve
+
+<BlockImage src="getting-started/safety-guidelines/risk.png" alt="Risk" width="70%" />
+
+Record and regularly review any hazards or improvement points you notice during use.
+Safety must be continuously enhanced through the cooperation of all users — it cannot be ensured only once.
+By joining the community below, you can take part in discussions about improving safety.
+
+### Safe Maintenance and Inspection
+
+To keep OpenArm operating safely, daily inspections and maintenance are essential.
+Pay particular attention to the following points to detect any abnormalities or wear at an early stage.
+
+#### Loosening of base fasteners and screws on OpenArm
+
+Repeated movement in certain postures or vibrations can cause screws or clamps to loosen unexpectedly.
+Loose screws at the base or around the arm’s joints may lead to serious accidents.
+Always check for any looseness before operating OpenArm.
+
+#### Damage to mechanical limits
+
+Each joint is equipped with mechanical limits to prevent abnormal postures and protect wiring.
+These mechanical limits can become deformed or broken by strong impacts.
+If operation continues with damaged mechanical limits, they may fail to prevent abnormal joint movement in the event of a malfunction.
+Check the condition of these parts regularly and replace them if necessary.
+
+#### Unusual noises or catching in joints
+
+Damage caused by excessive loads or impacts during operation can result in unusual noises or catching when moving joints.
+This is often caused by deformation of the frame or covers, damage to the motor gearbox, or cables getting caught.
+Identify the location of the noise or catching and investigate the cause thoroughly.
+
+#### Damage to wiring and connectors
+
+Repeated sharp bending or improper connection and disconnection can damage wiring and connectors.
+If cables or connectors are damaged, OpenArm may not function correctly, and electrical problems such as damage to the power supply or control devices can occur.
+If you notice any abnormal operation, immediately turn off the power and check cables from the base to the end for any damage.
+
+## Contribution Guide
+
+We welcome contributions from researchers, developers, makers, and enthusiasts at all levels! Whether you're sharing ideas, picking up tasks, or collaborating on projects, there's a place for you in the OpenArm community.
+
+### 💡 GitHub Issues - Our Idea Pool
+
+Use our [**OpenArm GitHub Repository**](https://github.com/enactic/openarm) as a central hub for new project ideas, feature requests, and bugs:
+
+<GitHubIssues />
+
+<div style={{padding: '20px', backgroundColor: '#e8f5e8', borderRadius: '10px', border: '1px solid #c3e6c3', margin: '20px 0'}}>
+  <h3>🎯 How It Works</h3>
+
+  <p><strong>👍 Upvote issues</strong> that resonate with you, this helps us prioritize what the community wants most.</p>
+  <p><strong>💡 Share your own ideas</strong> by creating new issues - no idea is too small or too ambitious!</p>
+  <p><strong>🔧 Unassigned issues = Open for pickup!</strong> Browse our issues and self-assign anything that interests you. No need to ask for permission, just start working and share your progress along the way in the comments!</p>
+</div>
+
+#### Submit Issues For:
+- 💡 Project ideas and feature requests
+- 🐛 Bug reports and technical issues
+- 🗣️ Community discussions and feedback
+- 🚀 Roadmap suggestions and priorities
+
+<div style={{textAlign: 'center', margin: '20px 0'}}>
+  <a href="https://github.com/enactic/openarm/issues" style={{
+    display: 'inline-block',
+    padding: '12px 24px',
+    backgroundColor: '#24292f',
+    color: 'white',
+    textDecoration: 'none',
+    borderRadius: '8px',
+    fontWeight: 'bold'
+  }}>🙌 Submit or Pick Up Issues</a>
+</div>
+
+### 💬 Discord - Connect & Collaborate
+
+Join our Discord to find collaborators, share what you're building, and integrate projects together.
+
+| Channel | Purpose | Best For |
+|---------|---------|----------|
+| **#projects** | Share builds, ideas, and find collaborators | Showcasing work, finding project partners |
+| **#faq** | Quick questions and community answers | Getting started, troubleshooting |
+| **#updates** | Official announcements | Staying current with developments |
+| **#weekly** | Development progress highlights | Following project milestones |
+| **#hardware** | Hardware discussions and improvements | Mechanical issues, design ideas |
+| **#controls** | Control algorithms and software | Development discussions, theory |
+
+<div style={{textAlign: 'center', margin: '20px 0'}}>
+  <a href="https://discord.gg/FsZaZ4z3We" style={{
+    display: 'inline-block',
+    padding: '12px 24px',
+    backgroundColor: '#5865f2',
+    color: 'white',
+    textDecoration: 'none',
+    borderRadius: '8px',
+    fontWeight: 'bold'
+  }}>💬 Join Discord Community</a>
+</div>
+
+### 🔧 Contributing Code & Fixes
+
+**Ready to submit your work?** We'd love to review your pull requests!
+
+<div style={{padding: '20px', backgroundColor: '#fff3e0', borderRadius: '10px', border: '1px solid #ffe0b3', margin: '20px 0'}}>
+  <h4>📤 Pull Request Process</h4>
+  <ol>
+    <li><strong>Fork</strong> the relevant repository</li>
+    <li><strong>Create a branch</strong> for your changes</li>
+    <li><strong>Make your improvements</strong> - fix bugs, add features, improve docs</li>
+    <li><strong>Test thoroughly</strong> when possible</li>
+    <li><strong>Submit a pull request</strong> with a clear description of what you've built or fixed</li>
+  </ol>
+</div>
